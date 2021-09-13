@@ -293,7 +293,7 @@ address {
   border-radius: 4px;
 }
 .modal-text {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -302,25 +302,28 @@ address {
   margin-bottom: 12px;
 }
 .lable {
-  margin-bottom: 4px;
+  display: block;
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--main-color-text);
 }
+.lable-comment {
+  margin-bottom: 20px;
+}
 .lable-box {
+  display: block;
   position: relative;
-  margin-bottom: 10px;
+  margin-top: 4px;
 }
 .icon-name {
   position: absolute;
   top: 50%;
-  left: 0;
-  width: 18px;
-  height: 18px;
+  left: 15px;
+  width: 13px;
+  height: 13px;
   transform: translateY(-50%);
-  margin-left: 12px;
-  margin-right: 12px;
   transition: fill 250ms var(--main-cubic-bezier);
 }
 .input {
@@ -330,13 +333,15 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
+  font-size: 14px;
   transition: outline-color 250ms var(--main-cubic-bezier);
 }
 .textarea {
+  display: block;
   resize: none;
   height: 120px;
+  margin-top: 4px;
   padding: 12px 16px;
-  margin-bottom: 20px;
 }
 .checkbox:checked + .checkbox-input {
   background-color: var(--decorative-color-text);
@@ -344,6 +349,7 @@ address {
 }
 .checkbox-lable {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
@@ -369,8 +375,8 @@ address {
   margin-right: 7px;
 }
 .icon-checkbox {
-  width: 11px;
-  height: 8px;
+  width: 15px;
+  height: 14px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -381,7 +387,8 @@ address {
   fill: var(--decorative-color-text);
 }
 .input:focus-within {
-  outline-color: var(--decorative-color-text);
+  border-color: var(--decorative-color-text);
+  outline: none;
 }
 .modal-close {
   position: absolute;
@@ -392,6 +399,7 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -599,6 +607,7 @@ address {
   align-items: baseline;
 }
 .footer-address {
+  flex-grow: 1;
   margin-right: 70px;
 }
 .footer-social {
